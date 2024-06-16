@@ -4,7 +4,7 @@ import fs from 'fs';
 try {
     (async () => {
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             waitUntil: 'networkidle2',
             timeout: 15000,
             args: [
